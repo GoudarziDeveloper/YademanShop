@@ -11,6 +11,5 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         window.decorView.layoutDirection = View.LAYOUT_DIRECTION_RTL
-
     }
 }
