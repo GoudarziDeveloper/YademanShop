@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
+        android:id="@+id/shopFragment"
         android:title="فروشگاه"
         android:icon="@drawable/shop"/>
     <item
+        android:id="@+id/interestFragment"
         android:title="علاقمندی ها"
         android:icon="@drawable/love"/>
     <item
+        android:id="@+id/cartFragment"
         android:title="سبد خرید"
         android:icon="@drawable/cart"/>
     <item
+        android:id="@+id/profileFragment"
         android:title="حساب کاربری"
         android:icon="@drawable/account"/>
 </menu>

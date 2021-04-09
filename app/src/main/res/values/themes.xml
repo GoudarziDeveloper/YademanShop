@@ -13,4 +13,42 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+    <style name="optionButtonStyle">
+        <item name="android:textColorSecondary">@color/colorBackGround</item>
+    </style>
+    <style name="txtLayoutStyle">
+        <item name="android:textColorSecondary">@color/border</item>
+        <item name="android:background">@color/colorBackGround</item>
+        <item name="android:textColor">@color/border</item>
+        <item name="errorTextColor">@color/border</item>
+        <item name="errorEnabled">true</item>
+        <item name="counterTextColor">@color/border</item>
+        <item name="counterEnabled">true</item>
+        <item name="android:gravity">right</item>
+    </style>
+    <style name="txtInputStyle">
+        <item name="android:textColorSecondary">@color/border</item>
+        <item name="android:background">@color/colorBackGround</item>
+        <item name="android:gravity">right</item>
+        <item name="android:textColorHint">@color/border</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:maxLines">1</item>
+    </style>
+    <style name="txtInputStylePass" parent="txtLayoutStyle">
+        <item name="passwordToggleEnabled">true</item>
+    </style>
+    <style name="button">
+        <item name="colorPrimary">@color/border</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">#000A65</item>
+        <item name="android:textColorPrimary">#0474AF</item>
+        <item name="android:windowBackground">@drawable/alert_dialog_background</item>
+    </style>
+
+    <style name="plusFabThem">
+        <item name="colorSecondary">@color/colorBackGround</item>
+    </style>
 </resources>

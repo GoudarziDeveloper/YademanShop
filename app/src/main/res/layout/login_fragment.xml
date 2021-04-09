@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorBackGround"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/log_txtHelp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="لطفا اطلاعات ورود خود را وارد کنید"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/login_txl_username"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:theme="@style/txtLayoutStyle"
+        app:counterMaxLength="35"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/log_txtHelp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/login_username"
+            style="@style/txtInputStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ايميل"
+            android:inputType="textEmailAddress"
+            android:maxLength="30" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/login_txl_password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:theme="@style/txtInputStylePass"
+        app:counterMaxLength="20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_txl_username">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/login_password"
+            style="@style/txtInputStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="رمز شخصی"
+            android:inputType="textPassword"
+            android:maxLength="25" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/login_btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="ورود"
+        android:theme="@style/button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_txl_password" />
+
+    <Button
+        android:id="@+id/login_btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="ثبت نام"
+        android:theme="@style/button"
+        app:layout_constraintStart_toEndOf="@+id/login_btnLogin"
+        app:layout_constraintTop_toBottomOf="@+id/login_txl_password" />
+
+    <ProgressBar
+        android:id="@+id/login_pb"
+        android:visibility="invisible"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/login_btnSubmit"
+        app:layout_constraintTop_toBottomOf="@+id/login_txl_password" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
